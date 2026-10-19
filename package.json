@@ -1,0 +1,21 @@
+{
+	"name": "bedrock-cdn",
+	"description": "Serve Minecraft Bedrock Dedicated Server resource packs from a CDN like Cloudflare R2, using cdn_config.json.",
+	"version": "1.0.0",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "bun src/build.ts",
+		"upload": "bun src/upload.ts",
+		"deploy": "bun src/deploy.ts",
+		"release": "bun run build && bun run upload && bun run deploy",
+		"typecheck": "tsc -p ."
+	},
+	"dependencies": {
+		"fflate": "^0.8.3"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.4.3",
+		"typescript": "^7.0.2"
+	}
+}

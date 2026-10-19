@@ -1,0 +1,5 @@
+{
+	"server": "servers/bedrock_server",
+	"resourcePacks": ["packs/resource_pack"],
+	"behaviorPacks": ["packs/behavior_pack"]
+}
